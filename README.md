@@ -68,3 +68,56 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Frontend Project: Form Builder with Drag-and-Drop
+
+### ReactJS Setup
+
+- Use ReactJS to build the form builder interface.
+- Utilize a DND plugin such as `react-beautiful-dnd` or `react-dnd` for drag-and-drop functionality.
+- Allow users to drag and drop different form components (input fields, checkboxes, dropdowns, etc.) onto a canvas area to build the form.
+
+### Form Components
+
+Pre-defined form elements include:
+- Text Input
+- Textarea
+- Select Dropdown
+- Checkbox
+- Radio Buttons
+- Date Picker
+- File Upload
+
+Each component should have customizable properties (e.g., label, placeholder, required, validation rules, etc.).
+
+### Form Builder Features
+
+- **Drag-and-drop interface**: Users can drag components from a side panel and drop them onto a form-building area.
+- **Editable Properties**: On selecting a form element, a properties panel opens, allowing users to edit settings (e.g., change label text, mark fields as required, etc.).
+- **Preview Mode**: Allow users to preview the form before saving.
+- **Save Form**: Capture the form structure (JSON format) and send it to the backend for saving.
+- **Edit Existing Forms**: Display a list of previously created forms. On selecting a form, it should be editable using the same drag-and-drop interface.
+
+### State Management
+
+- Manage the state of form components and their properties with React's state or use a global state management tool like Redux if needed for complex operations.
+- Store form metadata (title, description, etc.).
+
+### Form Validation
+
+- Allow adding validation rules to each form field (e.g., required, regex, max/min length).
+
+### Submit to Backend
+
+- Send the form structure (in JSON format) to the PHP backend for saving.
+- On form save, display a success or error message to the user.
+
+Here are some output of the images from the given tasks.
+
+![alt text](<Screenshot 2025-01-08 at 4.20.58 AM.png>) 
+![alt text](<Screenshot 2025-01-08 at 4.20.31 AM.png>) 
+![alt text](<Screenshot 2025-01-08 at 4.19.15 AM.png>) 
+![alt text](<Screenshot 2025-01-08 at 4.18.53 AM.png>) 
+![alt text](<Screenshot 2025-01-08 at 4.18.31 AM.png>) 
+![alt text](<Screenshot 2025-01-08 at 4.18.00 AM.png>) 
+![alt text](<Screenshot 2025-01-08 at 4.21.18 AM.png>)
