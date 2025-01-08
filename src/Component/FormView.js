@@ -31,18 +31,18 @@ export default function FormView() {
   return (
     <Container>
       <h1>View Form</h1>
-        <Form>
-          <Form.Group className="mb-3">
+      <Form>
+        <Form.Group className="mb-3">
           <Form.Label>Form Name</Form.Label>
-            <Form.Control
-              type="text"
-              name="form_name"
-              key="form_name"
-              value={formData.form_name}
-              required
-            />
-          </Form.Group>
-        </Form>
+          <Form.Control
+            type="text"
+            name="form_name"
+            key="form_name"
+            value={formData.form_name}
+            required
+          />
+        </Form.Group>
+      </Form>
     </Container>
   );
 }

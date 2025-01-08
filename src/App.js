@@ -13,25 +13,25 @@ import FormView from "./Component/FormView";
 function App() {
   return (
     <>
-    {<Header />}
-    <Routes>
+      {<Header />}
+      <Routes>
 
-      <Route path='/' element={<Home/>} />
+        <Route path='/' element={<Home />} />
 
-      {/* UnProtectedRoutes */}
-      <Route exact path='/' element={<UnProtectedRoutes/>}>
-        <Route exact path='/register' element={<Register/>} />
-        <Route exac path='/login' element={<Login/>} />
-      </Route>
+        {/* UnProtectedRoutes */}
+        <Route exact path='/' element={<UnProtectedRoutes />}>
+          <Route exact path='/register' element={<Register />} />
+          <Route exac path='/login' element={<Login />} />
+        </Route>
 
-      {/* ProtectedRoutes */}
-      <Route exact path='/' element={<ProtectedRoutes/>}>
-        <Route exact path='/forms/list' element={<FormList/>}/>
-        <Route exact path='/forms/create' element={<FormCreate/>}/>
-        <Route exact path='/forms/view/:formId' element={<FormView/>}/>
-      </Route>
+        {/* ProtectedRoutes */}
+        <Route exact path='/' element={<ProtectedRoutes />}>
+          <Route exact path='/forms/list' element={<FormList />} />
+          <Route exact path='/forms/create' element={<FormCreate />} />
+          <Route exact path='/forms/view/:formId' element={<FormView />} />
+        </Route>
 
-    </Routes>
+      </Routes>
     </>
   );
 }

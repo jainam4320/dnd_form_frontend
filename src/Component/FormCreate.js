@@ -189,7 +189,7 @@ export default function FormCreate() {
   const [formName, setFormName] = useState("");
   const cookies = new Cookies();
   const token = cookies.get("TOKEN");
-  
+
   useEffect(() => {
     if (component.selected != undefined) {
       const newFormData = [...formData, component]
@@ -232,7 +232,7 @@ export default function FormCreate() {
       <Container>
         <Form onSubmit={(e) => handleSubmit(e)}>
           <Form.Group className="mb-3">
-          <Form.Label>Form Name</Form.Label>
+            <Form.Label>Form Name</Form.Label>
             <Form.Control
               type="text"
               name="form_name"
@@ -241,7 +241,7 @@ export default function FormCreate() {
               onChange={(e) => setFormName(e.target.value)}
               required
             />
-            </Form.Group>
+          </Form.Group>
           {formData.map((item, index) => {
             return (
               <>

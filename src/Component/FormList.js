@@ -48,7 +48,7 @@ export default function FormList() {
                   <Card.Img variant="top" src={formImage} />
                   <Card.Body>
                     <Card.Title>{form.form_name}</Card.Title>
-                    <Button variant="primary" type="submit" onClick={() => { window.location.href = "/forms/view/" + form._id}}>View Form</Button>
+                    <Button variant="primary" type="submit" onClick={() => { window.location.href = "/forms/view/" + form._id }}>View Form</Button>
                   </Card.Body>
                 </Card>
               </Col>
