@@ -23,7 +23,6 @@ export default function Login() {
 
         axios(configuration)
             .then((result) => {
-                // setLogin(true);
                 cookies.set("TOKEN", result.data.token, {
                     path: "/",
                 });

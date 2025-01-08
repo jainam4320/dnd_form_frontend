@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Cookies from "universal-cookie";
 
-
 export default function Auth() {
 
   const cookies = new Cookies();
