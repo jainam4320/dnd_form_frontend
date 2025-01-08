@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Cookies from "universal-cookie";
+import logo from "../Assets/logo.png";
 
 export default function Login() {
 
@@ -14,17 +15,19 @@ export default function Login() {
     return (
         <Container>
             <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-                <a href="./" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                    <img src={logo} alt="logo" width="32" height="32" />
                     <span class="fs-4">Custom Form App</span>
                 </a>
                 <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
                     {token === undefined ? (
                         <>
-                            <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="./register">Register</a>
-                            <a class="py-2 link-body-emphasis text-decoration-none" href="./login">Login</a>
+                            <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/register">Register</a>
+                            <a class="py-2 link-body-emphasis text-decoration-none" href="/login">Login</a>
                         </>
                     ) : (
                         <>
+                            <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/forms/list">Forms</a>
                             <a class="py-2 link-body-emphasis text-decoration-none" href="#" onClick={() => logout()}>Logout</a>
                         </>
                     )}

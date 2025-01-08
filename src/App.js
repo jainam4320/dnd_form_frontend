@@ -3,10 +3,13 @@ import { Routes, Route } from "react-router-dom";
 import Register from "./Component/Register";
 import Login from "./Component/Login";
 import Home from "./Component/Home";
-import Auth from "./Component/Auth";
+import FormList from "./Component/FormList";
 import Header from "./Component/Header";
 import ProtectedRoutes from "./Middleware/ProtectedRoutes";
 import UnProtectedRoutes from "./Middleware/UnProtectedRoutes";
+import FormCreate from "./Component/FormCreate";
+import FormView from "./Component/FormView";
+import FormEdit from "./Component/FormEdit";
 
 function App() {
   return (
@@ -24,9 +27,12 @@ function App() {
 
       {/* ProtectedRoutes */}
       <Route exact path='/' element={<ProtectedRoutes/>}>
-        <Route exact path='/auth' element={<Auth/>}/>
+        <Route exact path='/forms/list' element={<FormList/>}/>
+        <Route exact path='/forms/create' element={<FormCreate/>}/>
+        <Route exact path='/forms/view' element={<FormView/>}/>
+        <Route exact path='/forms/update' element={<FormEdit/>}/>
       </Route>
-      
+
     </Routes>
     </>
   );

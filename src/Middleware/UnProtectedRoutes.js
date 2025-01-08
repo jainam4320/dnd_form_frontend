@@ -8,7 +8,7 @@ export default function UnProtectedRoutes({ element: Component, ...rest }) {
 
     const UnProtectedRoutes = () => {
         const token = cookies.get("TOKEN");
-        return token ? <Navigate to="/auth" /> : <Outlet />;
+        return token ? <Navigate to="/forms/list" /> : <Outlet />;
     }
 
     return (

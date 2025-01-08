@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Container, FormCheck } from "react-bootstrap";
-import { Form, Button } from "react-bootstrap";
+import { Container, FormCheck, Form, Button } from "react-bootstrap";
 import axios from "axios";
 import Cookies from "universal-cookie";
 
@@ -26,7 +25,7 @@ export default function Login() {
                 cookies.set("TOKEN", result.data.token, {
                     path: "/",
                 });
-                window.location.href = "/auth";
+                window.location.href = "/forms/list";
             })
             .catch((error) => {
                 setFailLogin(true);
