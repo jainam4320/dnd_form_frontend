@@ -24,11 +24,10 @@ export default function Login() {
                             <a class="py-2 link-body-emphasis text-decoration-none" href="./login">Login</a>
                         </>
                     ) : (
-                        <a class="py-2 link-body-emphasis text-decoration-none" href="#" onClick={() => logout()}>Logout</a>
+                        <>
+                            <a class="py-2 link-body-emphasis text-decoration-none" href="#" onClick={() => logout()}>Logout</a>
+                        </>
                     )}
-                    {/* <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="./register">Register</a>
-                    <a class="py-2 link-body-emphasis text-decoration-none" href="./login">Login</a>
-                    <a class="py-2 link-body-emphasis text-decoration-none" href={() => logout()}>Logout</a> */}
                 </nav>
             </div>
         </Container>
