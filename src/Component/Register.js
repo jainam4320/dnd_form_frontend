@@ -75,7 +75,7 @@ export default function Register() {
                         </Button>
 
                         {/* Login Button */}
-                        <a class="me-3 py-2 link-body-emphasis text-decoration-none text-decoration-underline" href="./login">Already a user... Login</a>
+                        <a className="me-3 py-2 link-body-emphasis text-decoration-none text-decoration-underline" href="./login">Already a user... Login</a>
                     </Form>
                 </div>
             </Container>

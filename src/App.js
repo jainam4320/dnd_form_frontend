@@ -9,7 +9,6 @@ import ProtectedRoutes from "./Middleware/ProtectedRoutes";
 import UnProtectedRoutes from "./Middleware/UnProtectedRoutes";
 import FormCreate from "./Component/FormCreate";
 import FormView from "./Component/FormView";
-import FormEdit from "./Component/FormEdit";
 
 function App() {
   return (
@@ -29,8 +28,7 @@ function App() {
       <Route exact path='/' element={<ProtectedRoutes/>}>
         <Route exact path='/forms/list' element={<FormList/>}/>
         <Route exact path='/forms/create' element={<FormCreate/>}/>
-        <Route exact path='/forms/view' element={<FormView/>}/>
-        <Route exact path='/forms/update' element={<FormEdit/>}/>
+        <Route exact path='/forms/view/:formId' element={<FormView/>}/>
       </Route>
 
     </Routes>

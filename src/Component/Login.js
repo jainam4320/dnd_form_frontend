@@ -65,9 +65,9 @@ export default function Login() {
                         </Form.Group>
 
                         {/* remember me */}
-                        <div class="form-check text-start my-3">
+                        <div className="form-check text-start my-3">
                             <FormCheck></FormCheck>
-                            <label class="form-check-label" for="flexCheckDefault">
+                            <label className="form-check-label" for="flexCheckDefault">
                                 Remember me
                             </label>
                         </div>
@@ -87,7 +87,7 @@ export default function Login() {
                         </Button>
 
                         {/* Register Button */}
-                        <a class="me-3 py-2 link-body-emphasis text-decoration-none text-decoration-underline" href="./register">New user... Register</a>
+                        <a className="me-3 py-2 link-body-emphasis text-decoration-none text-decoration-underline" href="./register">New user... Register</a>
                     </Form>
                 </div>
             </Container>
